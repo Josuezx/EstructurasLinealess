@@ -1,3 +1,7 @@
+import java.util.Stack;
+
+import Materia.Ejercicio_01_sign.ValidarSignos;
+import Materia.Ejercicio_02_sorting.Sorting;
 import Materia.Models.Cola;
 import Materia.Models.ColaGenerica;
 import Materia.Models.Pantalla;
@@ -75,6 +79,28 @@ public class App {
         System.out.println("Estoy en la pantalla\n\t -->"+queueGeneric.peek().getNombre());
         System.out.println("Pantalla destruida\n\t -->"+queueGeneric.remove().getNombre());
         System.out.println("Estoy en la pantalla\n\t -->"+queueGeneric.peek().getNombre());
+
+        ValidarSignos validar = new ValidarSignos();
+        System.out.println(validar.esValido("([]){}")); 
+        System.out.println(validar.esValido("({)})"));  
+        System.out.println("");
+
+        Stack<Integer> stack = new Stack<>();
+        stack.push(7);
+        stack.push(4);
+        stack.push(1);
+        stack.push(0);
+        
+        Sorting ordenamiento = new Sorting();
+        ordenamiento.ordenar(stack);
+
+        while (!stack.isEmpty()) {
+            System.out.println(stack.pop() +" ");
+            
+        }
+
+        
+        
 
 
 

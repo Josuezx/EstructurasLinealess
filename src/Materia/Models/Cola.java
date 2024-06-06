@@ -29,6 +29,7 @@ public class Cola {
 
     //metodo para eliminar
     public int remove(){
+        
         if (isEmpty()) {
             throw new NoSuchElementException("La cola esta vacia");
         }
