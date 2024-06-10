@@ -2,6 +2,7 @@ import java.util.Stack;
 
 import Materia.Ejercicio_01_sign.ValidarSignos;
 import Materia.Ejercicio_02_sorting.Sorting;
+import Materia.ListasEnlazadas.ListasEnlazadas;
 import Materia.Models.Cola;
 import Materia.Models.ColaGenerica;
 import Materia.Models.Pantalla;
@@ -98,7 +99,27 @@ public class App {
             System.out.println(stack.pop() +" ");
             
         }
+        
+        stack.push(2);
 
+
+        Sorting sorter = new Sorting();
+        sorter.ordenar(stack);
+
+        while (!stack.isEmpty()) {
+            System.out.print(stack.pop() + " ");
+        }
+
+        ListasEnlazadas lista = new ListasEnlazadas();
+        lista.addNode( 1);
+        lista.addNode( 4);
+        lista.addNode( 3);
+        lista.addNode( 6);
+        System.out.println();
+        lista.deleteNode( 1);
+        lista.print();
+        lista.deleteNode( 3);
+        lista.print();
         
         
 

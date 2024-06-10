@@ -17,5 +17,7 @@ public class Sorting {
             stack.push(auxiliar.pop());
         }
     }
+
+  
     
 }
