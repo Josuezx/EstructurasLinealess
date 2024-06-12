@@ -141,7 +141,10 @@ public class App {
         linkedList.add(7);
         linkedList.add(6);
 
-        System.out.println(linkedList.getByPos(1));
+        System.out.println("valor de la Posicion-> "+linkedList.getByPos(1));
+        System.out.println("valor de la Posicion-> "+linkedList.getByPos(2));
+        System.out.println("valro de la Posicion-> "+linkedList.getByPos(3));
+        System.out.println("valor de la Posicion-> "+linkedList.getByPos(4));
 
 
         
