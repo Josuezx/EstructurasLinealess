@@ -48,10 +48,10 @@ public class ListasEnlazadas {
 
         Node current = head;
         while (current.next != null) {
-            System.out.print("Node --> "+current.value);
+            System.out.print(" Node --> "+current.value);
             current = current.next;
         }
-        System.out.println("Node -->"+current.value);
+        System.out.println(" Node --> "+current.value);
         System.out.println("fin de la lista");
     }
     
