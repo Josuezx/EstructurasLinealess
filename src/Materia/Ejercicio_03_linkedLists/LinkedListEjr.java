@@ -36,7 +36,7 @@ public class LinkedListEjr {
 
         // Verificar si la lista está vacía o la posición es negativa
         if (head == null || posicion < 0) {
-            return -1; // Valor especial indicando error
+            return -1; 
         }
     
         Node primerPuntero = head;
@@ -50,13 +50,12 @@ public class LinkedListEjr {
             primerPuntero = primerPuntero.next;
         }
     
-        // Mover ambos punteros hasta que el primer puntero llegue al final
         while (primerPuntero != null && primerPuntero.next != null) {
             primerPuntero = primerPuntero.next;
             segundoPuntero = segundoPuntero.next;
         }
     
-        // Si el primer puntero es null, significa que la posición era exactamente el tamaño de la lista
+        // Si el primer puntero es null, significa que la posición era  el tamaño de la lista
         if (primerPuntero == null) {
             return -1; // Posición no existe
         }
